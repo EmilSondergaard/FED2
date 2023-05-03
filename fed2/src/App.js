@@ -1,4 +1,6 @@
 import './App.css';
+import CreateModel from './Components/CreateModel';
+
 
 
 function App() {
@@ -6,7 +8,7 @@ function App() {
     <div className="App">
       
 
-      
+      <CreateModel></CreateModel>
 
 
     </div>
