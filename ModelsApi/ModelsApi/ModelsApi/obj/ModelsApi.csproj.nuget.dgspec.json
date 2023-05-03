@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\morte\\OneDrive\\Skrivebord\\AU\\4. semester\\FED\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\morte\\OneDrive\\Skrivebord\\AU\\4. semester\\FED\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\morte\\OneDrive\\Skrivebord\\AU\\4. semester\\FED\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
-        "packagesPath": "C:\\Users\\oholl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\obj\\",
+        "projectPath": "C:\\Users\\morte\\OneDrive\\Skrivebord\\AU\\4. semester\\FED\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "packagesPath": "C:\\Users\\morte\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\morte\\OneDrive\\Skrivebord\\AU\\4. semester\\FED\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\oholl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\morte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
