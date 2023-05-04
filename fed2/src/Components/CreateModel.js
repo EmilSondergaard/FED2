@@ -65,7 +65,6 @@ function CreateModel() {
 
   return (
     <div>
-
       <NavigationBar />
       <form onSubmit={handleSubmit}>
         <label>
