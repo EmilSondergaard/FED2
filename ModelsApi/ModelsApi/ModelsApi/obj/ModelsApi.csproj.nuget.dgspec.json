@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\mads\\OneDrive\\Dokumenter\\Uni\\Fjerde semester\\Frontend\\aflevering2\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\mads\\OneDrive\\Dokumenter\\Uni\\Fjerde semester\\Frontend\\aflevering2\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\mads\\OneDrive\\Dokumenter\\Uni\\Fjerde semester\\Frontend\\aflevering2\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
-        "packagesPath": "C:\\Users\\oholl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oholl\\Downloads\\ModelsApi\\ModelsApi\\ModelsApi\\obj\\",
+        "projectPath": "C:\\Users\\mads\\OneDrive\\Dokumenter\\Uni\\Fjerde semester\\Frontend\\aflevering2\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "packagesPath": "C:\\Users\\mads\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mads\\OneDrive\\Dokumenter\\Uni\\Fjerde semester\\Frontend\\aflevering2\\FED2\\ModelsApi\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\oholl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mads\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
