@@ -3,6 +3,7 @@ import { LoginForm } from './Components/LoginForm';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { SiteNavigation } from './Components/SiteNavigation';
 
+
 function App() {
   return (
     <div className="App">
@@ -12,8 +13,6 @@ function App() {
           <Route path="/Home" element={<SiteNavigation/>} />
         </Routes>
       </Router>
-
-      
 
 
     </div>
