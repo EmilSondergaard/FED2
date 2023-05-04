@@ -5,21 +5,15 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 
-
-
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-      
-=======
       <Router>
         <Routes>
         <Route path="/" element={<LoginForm></LoginForm>} />
         </Routes>
       </Router>
 
->>>>>>> origin/main
 
     </div>
   );
