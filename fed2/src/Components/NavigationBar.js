@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 export function NavigationBar() {
-    const IsManager = false;
+    var IsManager = false;
     
     
 
@@ -13,6 +13,13 @@ export function NavigationBar() {
         }).join(''));
     
         return JSON.parse(jsonPayload);
+    }
+
+    let token = localStorage.getItem('token');
+    if(token){
+        let user = parseJwt(token);
+        console.log(user);
+        IsManager = user["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"] === "Manager";
     }
 
     if (IsManager) {
