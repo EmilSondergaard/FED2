@@ -22,11 +22,10 @@ const AddModelToJob = () => {
         }
       });
       const data = await response.json();
-      console.log(data); // log the response data to the console
-      // do something with the response data, such as update the UI to reflect the new model added to the job
+      console.log(data);
     } catch (error) {
       console.error(error);
-      // handle the error, such as displaying an error message to the user
+      
     }
   };
 
