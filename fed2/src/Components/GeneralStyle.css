@@ -1,9 +1,4 @@
-/* AddExpense.css */
 
-/* Import the shark banner image */
-/* @import url('./shark-banner.jpg'); */
-
-/* Apply background image to form */
 body {
   background-image: url('./shark-banner.jpg');
   background-repeat: no-repeat;
