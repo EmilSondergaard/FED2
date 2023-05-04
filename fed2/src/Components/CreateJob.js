@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavigationBar } from './NavigationBar';
 
 function CreateJob() {
   const [customer, setCustomer] = useState("string");
@@ -14,7 +15,7 @@ function CreateJob() {
       const response = await fetch('https://localhost:7181/api/Jobs', {
         method: 'POST',
         headers: {
-        //   'Authorization': 'bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJib3NzQG0uZGsiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYW5hZ2VyIiwiTW9kZWxJZCI6Ii0xIiwibmJmIjoiMTY4MzE5Mjc0NyIsImV4cCI6IjE2ODMyNzkxNDcifQ.ca_ayK6MfieoO2HSiZ70uPBPJWdrk5f7zZPHjIhpsLI',
+          //   'Authorization': 'bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJib3NzQG0uZGsiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYW5hZ2VyIiwiTW9kZWxJZCI6Ii0xIiwibmJmIjoiMTY4MzE5Mjc0NyIsImV4cCI6IjE2ODMyNzkxNDcifQ.ca_ayK6MfieoO2HSiZ70uPBPJWdrk5f7zZPHjIhpsLI',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -38,34 +39,37 @@ function CreateJob() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Customer:
-        <input type="text" value={customer} onChange={e => setCustomer(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Start Date:
-        <input type="datetime-local" value={startDate} onChange={e => setStartDate(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Days:
-        <input type="number" value={days} onChange={e => setDays(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Location:
-        <input type="text" value={location} onChange={e => setLocation(e.target.value)} />
-      </label>
-      <br />
-      <label>
-        Comments:
-        <input type="text" value={comments} onChange={e => setComments(e.target.value)} />
-      </label>
-      <br />
-      <button type="submit">Create Job</button>
+    <div>
+      <NavigationBar />
+      <form onSubmit={handleSubmit}>
+        <label>
+          Customer:
+          <input type="text" value={customer} onChange={e => setCustomer(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Start Date:
+          <input type="datetime-local" value={startDate} onChange={e => setStartDate(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Days:
+          <input type="number" value={days} onChange={e => setDays(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Location:
+          <input type="text" value={location} onChange={e => setLocation(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Comments:
+          <input type="text" value={comments} onChange={e => setComments(e.target.value)} />
+        </label>
+        <br />
+        <button type="submit">Create Job</button>
       </form>
-    )
+    </div>
+  )
 }
 export default CreateJob;
