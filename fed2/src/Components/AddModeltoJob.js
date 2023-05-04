@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './GeneralStyle.css'
 
 const AddModelToJob = () => {
   const [modelID, setModelID] = useState('');
@@ -30,6 +31,7 @@ const AddModelToJob = () => {
   };
 
   return (
+    <form>
     <div>
       <label htmlFor="model-id-input">Model ID:</label>
       <input type="text" id="model-id-input" value={modelID} onChange={handleModelIDChange} />
@@ -37,6 +39,7 @@ const AddModelToJob = () => {
       <input type="text" id="job-id-input" value={jobID} onChange={handleJobIDChange} />
       <button onClick={handleAddModel}>Add Model to Job</button>
     </div>
+    </form>
   );
 };
 

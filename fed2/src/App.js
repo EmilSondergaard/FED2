@@ -12,8 +12,7 @@ function App() {
         <Routes>
         <Route path="/" element={<LoginForm></LoginForm>} />
         </Routes>
-      </Router>
-
+      </Router> 
 
     </div>
   );

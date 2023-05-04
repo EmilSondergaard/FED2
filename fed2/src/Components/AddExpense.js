@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './GeneralStyle.css'
 
 export function AddExpense() {
   const [modelId, setModelId] = useState(0);
