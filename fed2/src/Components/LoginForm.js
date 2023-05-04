@@ -36,7 +36,7 @@ export function LoginForm() {
                 localStorage.setItem("token", token.jwt);
                 // Change view to some other component
                 // …
-                Navigate("/yeah");
+                Navigate("/Home");
             } else {
                 alert("Server returned: " + response.statusText);
             }

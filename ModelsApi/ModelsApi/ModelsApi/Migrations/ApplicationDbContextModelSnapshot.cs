@@ -48,7 +48,7 @@ namespace ModelsApi.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.ToTable("Accounts");
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfExpense", b =>
@@ -81,7 +81,7 @@ namespace ModelsApi.Migrations
 
                     b.HasIndex("EfModelId");
 
-                    b.ToTable("Expenses");
+                    b.ToTable("Expenses", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfJob", b =>
@@ -112,7 +112,7 @@ namespace ModelsApi.Migrations
 
                     b.HasKey("EfJobId");
 
-                    b.ToTable("Jobs");
+                    b.ToTable("Jobs", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfJobModel", b =>
@@ -127,7 +127,7 @@ namespace ModelsApi.Migrations
 
                     b.HasIndex("EfModelId");
 
-                    b.ToTable("JobModels");
+                    b.ToTable("JobModels", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfManager", b =>
@@ -161,7 +161,7 @@ namespace ModelsApi.Migrations
                         .IsUnique()
                         .HasFilter("[Email] IS NOT NULL");
 
-                    b.ToTable("Managers");
+                    b.ToTable("Managers", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfModel", b =>
@@ -244,7 +244,7 @@ namespace ModelsApi.Migrations
                         .IsUnique()
                         .HasFilter("[Email] IS NOT NULL");
 
-                    b.ToTable("Models");
+                    b.ToTable("Models", (string)null);
                 });
 
             modelBuilder.Entity("ModelsApi.Models.Entities.EfExpense", b =>
