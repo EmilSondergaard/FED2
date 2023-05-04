@@ -1,7 +1,8 @@
 import './App.css';
 import { LoginForm } from './Components/LoginForm';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { SiteNavigation } from './Components/SiteNavigation';
+import { NavigationBar } from './Components/NavigationBar';
+import CreateModel from './Components/CreateModel';
 
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LoginForm/>} />
-          <Route path="/Home" element={<SiteNavigation/>} />
+          <Route path="/Home" element={<NavigationBar/>} />
+          <Route path="/CreateModel" element={<CreateModel/>} />
         </Routes>
       </Router>
 

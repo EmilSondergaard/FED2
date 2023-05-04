@@ -1,7 +1,6 @@
-import react from 'react';
 import { NavLink } from 'react-router-dom';
 
-export function SiteNavigation() {
+export function NavigationBar() {
     const IsManager = false;
 
 
@@ -10,7 +9,7 @@ export function SiteNavigation() {
         return (
             <>
                 <nav>
-                    <NavLink to="/" >Login</NavLink>
+                    <NavLink to="/CreateModel" >Create Model</NavLink>
 
                 </nav>
 
