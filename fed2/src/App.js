@@ -1,4 +1,5 @@
 import './App.css';
+import JobsList from './Components/ListOfJobs';
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="App">
       
 
-      
+      <JobsList></JobsList>
 
 
     </div>
