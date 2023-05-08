@@ -2,10 +2,17 @@
 body {
   background-image: url('./shark-banner.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   padding: 2rem;
   border-radius: 0.5rem;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Style form inputs */
 form label {
@@ -13,18 +20,25 @@ form label {
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #fff;
+  width: 500px;
+  text-align: center;  
+  justify-content: center;
+  align-items: center;
 }
+
 
 form input[type="number"],
 form input[type="datetime-local"],
 form input[type="text"] {
   display: block;
-  width: 100%;
+  width: 500px;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Style form button */
