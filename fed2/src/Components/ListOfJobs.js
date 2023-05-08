@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react';
+import './GeneralStyle.css';
 
 const JobsList = () => {
   const [jobs, setJobs] = useState([]);

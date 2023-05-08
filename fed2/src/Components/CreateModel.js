@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { NavigationBar } from './NavigationBar';
+import './GeneralStyle.css';
 
 function CreateModel() {
   const [firstName, setFirstName] = useState("");

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './GeneralStyle.css'
 import { NavigationBar } from './NavigationBar';
 
 const AddModelToJob = () => {
@@ -31,6 +32,7 @@ const AddModelToJob = () => {
   };
 
   return (
+    <form>
     <div>
       <NavigationBar />
       <div>
@@ -41,6 +43,7 @@ const AddModelToJob = () => {
         <button onClick={handleAddModel}>Add Model to Job</button>
       </div>
     </div>
+    </form>
   );
 };
 

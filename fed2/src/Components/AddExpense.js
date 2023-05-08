@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './GeneralStyle.css'
 import { NavigationBar } from './NavigationBar';
 
 export function AddExpense() {

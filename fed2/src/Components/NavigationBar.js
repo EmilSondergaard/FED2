@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import './NavbarStyling.css';
+import './GeneralStyle.css';
 
 export function NavigationBar() {
     var IsManager = false;

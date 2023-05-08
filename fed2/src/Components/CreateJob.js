@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavigationBar } from './NavigationBar';
+import './GeneralStyle.css';
 
 function CreateJob() {
   const [customer, setCustomer] = useState("string");
