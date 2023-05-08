@@ -16,7 +16,7 @@ function CreateJob() {
       const response = await fetch('https://localhost:7181/api/Jobs', {
         method: 'POST',
         headers: {
-          //   'Authorization': 'bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJib3NzQG0uZGsiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYW5hZ2VyIiwiTW9kZWxJZCI6Ii0xIiwibmJmIjoiMTY4MzE5Mjc0NyIsImV4cCI6IjE2ODMyNzkxNDcifQ.ca_ayK6MfieoO2HSiZ70uPBPJWdrk5f7zZPHjIhpsLI',
+          'Authorization': 'Bearer ' + localStorage.getItem("token"),
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({

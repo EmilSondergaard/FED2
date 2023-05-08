@@ -29,7 +29,9 @@ export function LoginForm() {
                     Password:password
                 }), // Assumes data is in an object called form
                 headers: new Headers({
+                    'Authorization': 'Bearer ' + localStorage.getItem("token"),
                     "Content-Type": "application/json"
+                    
                 })
             });
             if (response.ok) {

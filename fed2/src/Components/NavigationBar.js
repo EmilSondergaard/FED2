@@ -26,9 +26,9 @@ export function NavigationBar() {
 
     if (IsManager) {
         return (
+          
             <div width='100%' >
                 <nav >
-                    <NavLink to="/AddExpense" >Add expense</NavLink>
                     <NavLink to="/AddModelToJob" >Add model to job</NavLink>
                     <NavLink to="/CreateModel" >Create model</NavLink>
                     <NavLink to="/CreateJob" >Create job</NavLink>
@@ -37,15 +37,18 @@ export function NavigationBar() {
                     <NavLink to="/ListOfJobs" >List of jobs</NavLink>
                 </nav>
             </div>
+            
         )
     } else {
         return (
+          
             <div width='100%' >
                 <nav>
                     <NavLink to="/AddExpense" >Add expense</NavLink>
                     <NavLink to="/ListOfJobs" >List of jobs</NavLink>
                 </nav>
             </div>
+        
         )
     }
 

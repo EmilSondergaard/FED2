@@ -2,6 +2,12 @@ nav{
     display: flex;
     justify-content: center;
     background-color:  black;
+    position: fixed;
+    width: 100%;
+    position: relative;
+    padding: 5px;
+    overflow: hidden;
+    
 }
 
 nav a {

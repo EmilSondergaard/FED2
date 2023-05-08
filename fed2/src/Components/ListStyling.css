@@ -1,0 +1,51 @@
+/* JobsList styles */
+
+/* Set margin and padding to 0 for the entire page */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add a fixed position to the NavigationBar component */
+  /* .NavigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  } */
+  
+  /* Style the Jobs List title */
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  /* Style the Jobs List table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style the Jobs List table header */
+  thead {
+    background-color: white;
+  }
+  
+  thead th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the Jobs List table rows */
+  tbody tr {
+    background-color: #f2f2f2;
+  }
+  
+  tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  

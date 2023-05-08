@@ -13,11 +13,9 @@ function CreatManager() {
         event.preventDefault();
 
         try{
-            let jwt ="eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJib3NzQG0uZGsiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYW5hZ2VyIiwiTW9kZWxJZCI6Ii0xIiwibmJmIjoiMTY4MzEyMzMzOCIsImV4cCI6IjE2ODMyMDk3MzgifQ.CKiNoaLnoIOtjH_2-Kq-LJ6T9CPpB7AtjysC5-FbHb8";
             const config = {
                 headers:{
-                  'Authorization': 'bearer '+ jwt,
-                
+                    'Authorization': 'Bearer ' + localStorage.getItem("token"),
                 }
             }
             const response = await axios.post('https://localhost:7181/api/Managers', {
@@ -27,6 +25,11 @@ function CreatManager() {
                 password
             }, config);
             console.log(response.data);
+            setFirstName("");
+            setLastName("");
+            setMail("");
+            setPasword("");
+
         } 
         catch (error){
             console.error(error);

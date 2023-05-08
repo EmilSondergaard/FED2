@@ -2,9 +2,16 @@
 body {
   background-image: url('./shark-banner.jpg');
   background-repeat: no-repeat;
-  background-size:cover;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+  /* background-repeat: no-repeat;
+  background-size: auto; 
+  back
+  background-position: auto;
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem; */
 }
 
 form {
@@ -26,10 +33,21 @@ form label {
   align-items: center;
 }
 
+.Area{
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid black;
+  overflow: auto;
+  resize: none;
+}
 
 form input[type="number"],
 form input[type="datetime-local"],
-form input[type="text"] {
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="password"],
+form input[type="email"] {
   display: block;
   width: 500px;
   padding: 0.5rem;
@@ -39,10 +57,11 @@ form input[type="text"] {
   font-size: 1rem;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 
 /* Style form button */
-form button[type="submit"] {
+form button {
   display: block;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
