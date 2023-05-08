@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import './GeneralStyle.css';
+import { NavigationBar } from "./NavigationBar";
 
 function CreatManager() {
     const [firstName, setFirstName] = useState('');
@@ -33,17 +34,20 @@ function CreatManager() {
 }
 
 return(
-    <form onSubmit={handleSubmit}> 
-    <label> Firstname:  <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} /> </label>
-    <br/>
-    <label> Lastname:  <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} /> </label>
-    <br/>
-    <label> Mail:  <input type="text" value={mail} onChange={(e) => setMail(e.target.value)} /> </label>
-    <br/>
-    <label> Password:  <input type="text" value={password} onChange={(e) => setPasword(e.target.value)} /> </label>
-    <br/>
-    <button type="submit" onChange={handleSubmit}> Create Manager </button>
-    </form>
+    <div>
+        <NavigationBar />
+        <form onSubmit={handleSubmit}> 
+        <label> Firstname:  <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} /> </label>
+        <br/>
+        <label> Lastname:  <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} /> </label>
+        <br/>
+        <label> Mail:  <input type="text" value={mail} onChange={(e) => setMail(e.target.value)} /> </label>
+        <br/>
+        <label> Password:  <input type="text" value={password} onChange={(e) => setPasword(e.target.value)} /> </label>
+        <br/>
+        <button type="submit" onChange={handleSubmit}> Create Manager </button>
+        </form>
+    </div>
 );
 
 }

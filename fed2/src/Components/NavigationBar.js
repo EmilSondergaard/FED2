@@ -33,6 +33,8 @@ export function NavigationBar() {
                     <NavLink to="/CreateModel" >Create model</NavLink>
                     <NavLink to="/CreateJob" >Create job</NavLink>
                     <NavLink to="/DeleteModelFromJob" >Delete model from job</NavLink>
+                    <NavLink to="/CreateManager" >Create Manager</NavLink>
+                    <NavLink to="/ListOfJobs" >List of jobs</NavLink>
                 </nav>
             </div>
         )
@@ -41,10 +43,7 @@ export function NavigationBar() {
             <div width='100%' >
                 <nav>
                     <NavLink to="/AddExpense" >Add expense</NavLink>
-                    <NavLink to="/AddModelToJob" >Add model to job</NavLink>
-                    <NavLink to="/CreateModel" >Create model</NavLink>
-                    <NavLink to="/CreateJob" >Create jGDGRDSDFob</NavLink>
-                    <NavLink to="/DeleteModelFromJob" >Delete model from job</NavLink>
+                    <NavLink to="/ListOfJobs" >List of jobs</NavLink>
                 </nav>
             </div>
         )

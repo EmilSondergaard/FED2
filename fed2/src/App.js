@@ -7,6 +7,8 @@ import CreateJob from './Components/CreateJob';
 import AddModelToJob from './Components/AddModeltoJob';
 import DeleteModelFromJob from './Components/DeleteModelFromJob';
 import { AddExpense } from './Components/AddExpense';
+import CreatManager from './Components/CreateManager';
+import JobsList from './Components/ListOfJobs';
 
 
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/AddModelToJob" element={<AddModelToJob />} />
           <Route path="/DeleteModelFromJob" element={<DeleteModelFromJob />} />
           <Route path="/AddExpense" element={<AddExpense />} />
+          <Route path="/CreateManager" element={<CreatManager />} />
+          <Route path="/ListOfJobs" element={< JobsList/>} />
         </Routes>
       </Router> 
 

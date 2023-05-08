@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react';
 import './GeneralStyle.css';
+import { NavigationBar } from './NavigationBar';
 
 const JobsList = () => {
   const [jobs, setJobs] = useState([]);
@@ -19,47 +20,36 @@ const JobsList = () => {
     fetchJobs();
   }, []);
   return (
-    
-    <Fragment>
-      <h2>Jobs List</h2>
-    <table>
-    <thead>
-      <tr>
-        <th>JobID</th>
-        <th>Customer</th>
-        <th>StartDate</th>
-        <th>Days</th>
-        <th>Location</th>
-        <th>Comments</th>
-      </tr>
-    </thead>
-    <tbody>
-      {jobs.map((job) => (
-        <tr key={job.id}>
-          <td>{job.jobId}</td>
-          <td>{job.customer}</td>
-          <td>{job.startDate}</td>
-          <td>{job.days}</td>
-          <td>{job.location}</td>
-          <td>{job.comments}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
 
-    </Fragment>
-    // <div>
-    //   <h2>Jobs List</h2>
-    //   <ul>
-        
-        
-    //     {jobs.map((job) => 
-    //       <li key={job.jobId}>JobID: {job.jobId} Customer: {job.customer}</li>
-          
-    //     )}
-    //   </ul>
-    // </div>
-    
+    <><div><NavigationBar /></div><Fragment>
+      <h2>Jobs List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>JobID</th>
+            <th>Customer</th>
+            <th>StartDate</th>
+            <th>Days</th>
+            <th>Location</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          {jobs.map((job) => (
+            <tr key={job.id}>
+              <td>{job.jobId}</td>
+              <td>{job.customer}</td>
+              <td>{job.startDate}</td>
+              <td>{job.days}</td>
+              <td>{job.location}</td>
+              <td>{job.comments}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+    </Fragment></>
+  
   );
 };
 
